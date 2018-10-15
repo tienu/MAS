@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Maven: com.j256.ormlite:ormlite-core:5.1">
+    <archive path="/Users/mateusznguyentien/.m2/repository/com/j256/ormlite/ormlite-core/5.1/ormlite-core-5.1.jar" />
+  </library>
+  <library name="Maven: com.j256.ormlite:ormlite-jdbc:5.1">
+    <archive path="/Users/mateusznguyentien/.m2/repository/com/j256/ormlite/ormlite-jdbc/5.1/ormlite-jdbc-5.1.jar" />
+  </library>
+  <library name="Maven: org.xerial:sqlite-jdbc:3.23.1">
+    <archive path="/Users/mateusznguyentien/.m2/repository/org/xerial/sqlite-jdbc/3.23.1/sqlite-jdbc-3.23.1.jar" />
+  </library>
+</eclipse-userlibraries>
+

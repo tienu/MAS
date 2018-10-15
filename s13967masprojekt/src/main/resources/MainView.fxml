@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.MainController">
+   <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="Sprawy">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="231.0" prefWidth="443.0">
+                  <children>
+                     <HBox layoutY="28.0" prefHeight="340.0" prefWidth="600.0">
+                        <children>
+                        
+                            <TableView fx:id="tableView" prefHeight="308.0" prefWidth="619.0">
+                                <!--<TableColumn fx:id="tableColumnID" text="id" />-->
+                                <!--<TableColumn fx:id="nameColumnID" text="Imie" />-->
+                                <!--<TableColumn fx:id="surnameColumnID" text="Nazwisko" />-->
+                                <!--<TableColumn fx:id="stateColumnID" text="Status" />-->
+                                <!--<TableColumn fx:id="typeColumnID" text="Typ" />-->
+                                <!--<TableColumn fx:id="dateColumnID" text="Data" />-->
+                            </TableView>
+                        </children>
+                     </HBox>
+                     <HBox alignment="TOP_RIGHT" prefHeight="27.0" prefWidth="600.0">
+                        <children>
+                           <TextField fx:id="findSprawaField" text="Wyszukaj" />
+                           <Button onAction="#findSprawa" text="Szukaj" />
+                           <Button onAction="#openTicketEditForm" text="Edytuj" />
+                           <Button onAction="#openClientForm" text="Dodaj klienta" />
+                           <Button onAction="#openTicketForm" text="Dodaj sprawę" />
+                        </children>
+                     </HBox>
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+       <Tab text="Klienci">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <HBox alignment="TOP_RIGHT" prefHeight="27.0" prefWidth="600.0">
+                        <children>
+                           <TextField fx:id="findClientField" text="Wyszukaj" />
+                           <Button onAction="#findClient" text="Szukaj" />
+                           <Button onAction="#openClientEditForm" text="Edytuj" />
+                           <Button onAction="#openClientForm" text="Dodaj klienta" />
+                           <Button onAction="#openTicketForm" text="Dodaj sprawę" />
+                        </children>
+                     </HBox>
+                     <HBox layoutX="2.0" layoutY="27.0" prefHeight="341.0" prefWidth="594.0">
+                        <children>
+                           <TableView fx:id="tableKlienciView" prefHeight="339.0" prefWidth="606.0">
+
+                               <!--<TableColumn fx:id="ktableColumnID" text="id" />-->
+                               <!--<TableColumn fx:id="knameColumnID" text="Imie" />-->
+                               <!--<TableColumn fx:id="ksurnameColumnID" text="Nazwisko" />-->
+                               <!--<TableColumn fx:id="kpeselColumnID" text="Pesel" />-->
+                               <!--<TableColumn fx:id="kdateColumnID" text="Data" />-->
+
+                           </TableView>
+                        </children>
+                     </HBox>
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+     </tabs>
+   </TabPane>
+
+</AnchorPane>
